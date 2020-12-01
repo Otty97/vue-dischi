@@ -5,8 +5,8 @@ let myApp = new Vue ({
 	},
 	mounted: function(){
 			axios.get("https://flynn.boolean.careers/exercises/api/array/music").then((result)=> {
-				this.albums.push(result.data.response)
+				this.albums = result.data.response)
 			});
-
+  
 	}
 })

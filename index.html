@@ -16,17 +16,15 @@
          </div>
        </header>
 
-      <div class="album-container" v-for="album in albums">
-       <div class="cds-container container">
+       <div class="cds-container container"  v-for="album in albums">
          <div class="cd">
            <img src="albums.poster" alt="">
            <h3>{{ albums.title }}</h3>
            <span class="author">{{ albums.author }}</span>
-           <span class="year">{{ albums.year }}</span>
+           <span class="year">{{ album.year }}</span>
          </div>
        </div>
       </div>
-    </div>
 
       <script src="js/vue.js" charset="utf-8"></script>
     </body>
